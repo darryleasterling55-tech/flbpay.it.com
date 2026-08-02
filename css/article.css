@@ -1,0 +1,297 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Microsoft YaHei", Arial;
+    background: #f5f9ff;
+    color: #17243b;
+    line-height: 1.9;
+}
+
+
+
+.header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: rgba(5,20,50,.8);
+    backdrop-filter: blur(15px);
+}
+
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+
+
+.header nav {
+    display: flex;
+    gap: 35px;
+}
+
+
+    .header nav a {
+        color: #fff;
+        font-size: 16px;
+        transition: .3s;
+        text-decoration: none;
+    }
+
+
+
+    .header nav .active {
+        color: #00d9ff;
+    }
+
+    .header nav a:hover {
+        color: #00d9ff;
+    }
+
+
+
+.header button {
+    padding: 12px 30px;
+    border: 0;
+    border-radius: 30px;
+    background: linear-gradient( 90deg, #006cff, #00d9ff );
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.article-banner {
+    height: 560px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+    background: linear-gradient( 90deg, rgba(0,20,60,.9), rgba(0,120,255,.3) ), url("../images/article-banner.jpg");
+    background-size: cover;
+}
+
+
+
+    .article-banner h1 {
+        font-size: 52px;
+        max-width: 800px;
+    }
+
+
+
+    .article-banner p {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+
+
+
+
+
+
+.article-container {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 25px;
+    background: white;
+}
+
+
+
+.article-meta {
+    padding: 30px 0;
+    color: #888;
+}
+
+
+
+.article-container h2 {
+    font-size: 32px;
+    margin: 45px 0 20px;
+    color: #006cff;
+}
+
+
+
+.article-container p {
+    font-size: 18px;
+}
+
+
+
+.article-container li {
+    margin: 15px;
+}
+
+
+
+
+
+
+
+.feature-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin: 40px 0;
+}
+
+
+
+    .feature-box div {
+        padding: 30px;
+        background: #f0f7ff;
+        border-radius: 20px;
+        border: 1px solid #d8ecff;
+    }
+
+
+
+    .feature-box h3 {
+        color: #006cff;
+    }
+
+
+
+
+
+
+
+.related {
+    margin-top: 70px;
+}
+
+
+
+.related-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+    .related-list a {
+        padding: 15px 25px;
+        border-radius: 30px;
+        background: #eef7ff;
+        color: #006cff;
+    }
+
+
+
+
+
+
+
+.cta {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient( 120deg, #006cff, #00d9ff );
+    color: white;
+}
+
+
+
+    .cta h2 {
+        font-size: 40px;
+    }
+
+
+
+    .cta button {
+        margin-top: 30px;
+        padding: 15px 45px;
+        border: 0;
+        border-radius: 40px;
+        background: white;
+        color: #006cff;
+    }
+
+
+
+
+
+
+
+@media(max-width:900px) {
+
+
+    .header nav {
+        display: none;
+    }
+
+
+
+    .article-banner {
+        height: 500px;
+        padding: 30px;
+    }
+
+
+
+        .article-banner h1 {
+            font-size: 34px;
+        }
+
+
+
+    .article-container h2 {
+        font-size: 26px;
+    }
+
+
+
+    .feature-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+.nav-btn {
+    background: linear-gradient(90deg,#006eff,#00d9ff);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,180,255,.5);
+    text-decoration: none;
+}
+
+.friend-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+    .friend-links a {
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+        opacity: 0.9;
+        transition: 0.3s;
+    }
+
+        .friend-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }

@@ -1,0 +1,1446 @@
+﻿/* ==================================
+ 菲律宾支付解决方案页面 CSS
+ Philippines Payment Gateway SEO Style
+ Technology Blue Financial Design
+================================== */
+
+
+/* ===============================
+ 全局基础
+================================ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background: #f5f9ff;
+    color: #17243b;
+    line-height: 1.8;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #061a3a;
+    margin-bottom: 25px;
+}
+
+
+
+p {
+    font-size: 16px;
+}
+
+
+
+
+
+/* ===============================
+ Header 导航
+================================ */
+
+
+.header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: rgba(5,20,50,.78);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d9ff;
+    letter-spacing: 1px;
+}
+
+
+
+
+.header nav {
+    display: flex;
+    gap: 35px;
+}
+
+
+
+
+    .header nav a {
+        color: white;
+        font-size: 16px;
+        transition: .3s;
+    }
+
+
+
+        .header nav a:hover,
+        .header nav .active {
+            color: #00d9ff;
+        }
+
+
+
+
+
+.nav-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 40px;
+    color: white;
+    background: linear-gradient( 90deg, #006eff, #00d9ff );
+    box-shadow: 0 0 25px rgba(0,180,255,.45);
+    transition: .35s;
+}
+
+
+
+    .nav-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 35px rgba(0,180,255,.55);
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ Banner
+================================ */
+
+
+.banner {
+    height: 720px;
+}
+
+
+
+.banner-bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(0,15,55,.92), rgba(0,120,255,.35) ), url("../images/payment-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+.banner-content {
+    margin-left: 10%;
+    max-width: 750px;
+    color: white;
+}
+
+
+
+    .banner-content h1 {
+        font-size: 58px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+
+
+    .banner-content p {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+
+
+
+    .banner-content a {
+        display: inline-block;
+        padding: 16px 45px;
+        border-radius: 50px;
+        background: linear-gradient( 90deg, #00c6ff, #006cff );
+        color: white;
+        font-size: 18px;
+        box-shadow: 0 10px 30px rgba(0,150,255,.35);
+        transition: .35s;
+    }
+
+
+
+        .banner-content a:hover {
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+/* ===============================
+ 通用 Section
+================================ */
+
+
+.section {
+    padding: 90px 8%;
+}
+
+
+
+
+.intro {
+    max-width: 900px;
+    margin: 0 auto 55px;
+    text-align: center;
+    color: #667;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 深色区域
+================================ */
+
+
+.dark {
+    padding: 90px 8%;
+    background: linear-gradient( 135deg, #061633, #073b80 );
+    color: white;
+}
+
+
+
+    .dark h2 {
+        color: white;
+    }
+
+
+
+    .dark p {
+        color: #e5efff;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 卡片系统
+================================ */
+
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+
+
+
+.box {
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0,80,180,.12);
+    transition: .35s;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+    .box::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient( 90deg, #006cff, #00d9ff );
+    }
+
+
+
+
+
+
+    .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 55px rgba(0,150,255,.3);
+    }
+
+
+
+
+    .box i {
+        font-size: 42px;
+        color: #008cff;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+    .box h3 {
+        color: #006cff;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+    .box p {
+        color: #666;
+    }
+
+/* ===============================
+ 支付流程
+================================ */
+
+
+.flow {
+    max-width: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+
+
+    .flow div {
+        width: 320px;
+        padding: 18px 30px;
+        text-align: center;
+        border-radius: 50px;
+        background: white;
+        color: #006cff;
+        font-size: 20px;
+        font-weight: 600;
+        box-shadow: 0 12px 30px rgba(0,80,180,.12);
+        transition: .35s;
+        position: relative;
+    }
+
+
+
+
+        .flow div:hover {
+            transform: translateY(-6px);
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            color: white;
+            box-shadow: 0 20px 45px rgba(0,150,255,.35);
+        }
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ API支付接口模块
+================================ */
+
+
+.api {
+    padding: 90px 8%;
+    text-align: center;
+    background: linear-gradient( 120deg, #eaf7ff, #ffffff );
+}
+
+
+
+
+    .api h2 {
+        color: #061a3a;
+    }
+
+
+
+
+    .api p {
+        max-width: 850px;
+        margin: 20px auto 45px;
+        color: #666;
+        font-size: 18px;
+    }
+
+
+
+
+
+
+.api-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+
+
+
+
+    .api-list span {
+        padding: 16px 35px;
+        border-radius: 40px;
+        background: white;
+        color: #006cff;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 10px 30px rgba(0,100,255,.15);
+        border: 1px solid rgba(0,110,255,.1);
+        transition: .35s;
+    }
+
+
+
+        .api-list span:hover {
+            transform: translateY(-6px);
+            color: white;
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            box-shadow: 0 20px 45px rgba(0,150,255,.35);
+        }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 安全体系
+================================ */
+
+
+.security {
+    padding: 90px 8%;
+    background: #f1f8ff;
+}
+
+
+
+    .security .box {
+        background: white;
+    }
+
+
+
+
+
+        .security .box i {
+            color: #006cff;
+        }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 行业应用
+================================ */
+
+
+.industry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+
+
+    .industry span {
+        padding: 18px 40px;
+        border-radius: 50px;
+        color: white;
+        background: rgba(255,255,255,.12);
+        border: 1px solid rgba(255,255,255,.25);
+        font-size: 17px;
+        transition: .35s;
+    }
+
+
+
+
+        .industry span:hover {
+            background: linear-gradient( 90deg, #006cff, #00d9ff );
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 部署流程
+================================ */
+
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #006cff;
+    font-size: 20px;
+}
+
+
+
+
+
+    .steps span {
+        padding: 18px 38px;
+        border-radius: 50px;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,.1);
+        transition: .35s;
+    }
+
+
+
+
+        .steps span:hover {
+            color: white;
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ FAQ模块
+================================ */
+
+
+.faq-section {
+    padding: 90px 10%;
+    background: #f5f9ff;
+}
+
+
+
+
+
+.faq-item {
+    background: white;
+    padding: 30px 35px;
+    margin-bottom: 22px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,80,180,.1);
+    transition: .35s;
+}
+
+
+
+
+
+    .faq-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 45px rgba(0,150,255,.25);
+    }
+
+
+
+
+
+    .faq-item h3 {
+        font-size: 21px;
+        color: #006cff;
+        margin-bottom: 15px;
+    }
+
+
+
+
+    .faq-item p {
+        color: #666;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ SEO关键词标签
+================================ */
+
+
+.keyword-section {
+    padding: 70px 8%;
+    background: white;
+}
+
+
+
+
+.keyword-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+
+
+    .keyword-list a {
+        padding: 12px 28px;
+        border-radius: 40px;
+        background: #eef7ff;
+        color: #006cff;
+        font-size: 15px;
+        transition: .35s;
+        border: 1px solid rgba(0,110,255,.1);
+    }
+
+
+
+
+        .keyword-list a:hover {
+            background: linear-gradient( 90deg, #006cff, #00d9ff );
+            color: white;
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 市场优势数据展示
+================================ */
+
+
+.data-section {
+    padding: 90px 8%;
+    background: linear-gradient( 135deg, #061633, #073b80 );
+}
+
+
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+
+
+
+.data-item {
+    padding: 35px;
+    text-align: center;
+    background: rgba(255,255,255,.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+
+
+
+    .data-item strong {
+        display: block;
+        font-size: 48px;
+        color: #00d9ff;
+        margin-bottom: 10px;
+    }
+
+
+
+
+    .data-item span {
+        color: white;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 通用悬浮动画
+================================ */
+
+
+@keyframes floatUp {
+
+
+    0% {
+        transform: translateY(0);
+    }
+
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+.animate {
+    animation: floatUp 3s infinite;
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 图片优化
+================================ */
+
+
+img {
+    border-radius: 12px;
+}
+
+
+/* =================================
+   CTA咨询区域
+================================= */
+
+
+.cta {
+    padding: 110px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient( 120deg, #006cff, #00d9ff );
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+    .cta::before {
+        content: "";
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgba(255,255,255,.12);
+        top: -250px;
+        right: -150px;
+    }
+
+
+
+
+
+    .cta h2 {
+        color: white;
+        font-size: 44px;
+        position: relative;
+    }
+
+
+
+    .cta p {
+        font-size: 21px;
+        margin: 25px 0 35px;
+        position: relative;
+    }
+
+
+
+
+    .cta .nav-btn {
+        background: white;
+        color: #006cff;
+        box-shadow: none;
+    }
+
+
+
+        .cta .nav-btn:hover {
+            background: #061a3a;
+            color: white;
+        }
+
+
+
+
+
+
+
+
+
+/* =================================
+   SEO长文本区域
+================================= */
+
+
+.seo-content {
+    padding: 90px 12%;
+    background: white;
+}
+
+
+
+
+    .seo-content h2 {
+        margin-bottom: 35px;
+    }
+
+
+
+
+
+    .seo-content h3 {
+        font-size: 24px;
+        color: #006cff;
+        margin: 35px 0 15px;
+    }
+
+
+
+
+    .seo-content p {
+        color: #555;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 25px;
+    }
+
+
+
+
+    .seo-content ul {
+        padding-left: 35px;
+        margin-bottom: 30px;
+    }
+
+
+
+    .seo-content li {
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+
+
+
+
+        .seo-content li::marker {
+            color: #006cff;
+        }
+
+
+
+
+
+
+
+
+
+/* =================================
+ 菲律宾支付优势模块
+================================= */
+
+
+.advantage-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+
+
+.advantage-card {
+    padding: 35px;
+    background: white;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(0,80,180,.12);
+    transition: .35s;
+}
+
+
+
+
+    .advantage-card:hover {
+        transform: translateY(-8px);
+    }
+
+
+
+
+
+    .advantage-card h3 {
+        color: #006cff;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+    .advantage-card p {
+        color: #666;
+    }
+
+
+
+
+
+
+
+
+
+/* =================================
+ FAQ 常见问题
+================================= */
+
+
+.faq-section {
+    padding: 90px 10%;
+    background: #f5f9ff;
+}
+
+
+
+
+.faq-item {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,80,180,.1);
+    transition: .3s;
+}
+
+
+
+    .faq-item:hover {
+        transform: translateY(-5px);
+    }
+
+
+
+    .faq-item h3 {
+        color: #006cff;
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+    .faq-item p {
+        color: #666;
+    }
+
+
+
+
+
+
+
+
+
+/* =================================
+ 关键词标签
+================================= */
+
+
+.keyword-section {
+    padding: 70px 8%;
+    background: white;
+}
+
+
+
+
+
+.keyword-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+
+
+
+    .keyword-list a {
+        padding: 12px 28px;
+        border-radius: 40px;
+        background: #eef7ff;
+        color: #006cff;
+        border: 1px solid rgba(0,110,255,.15);
+        transition: .3s;
+    }
+
+
+
+
+
+        .keyword-list a:hover {
+            background: #006cff;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+
+/* =================================
+ 友情链接
+================================= */
+
+
+.friend-links {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+
+
+    .friend-links a {
+        color: white;
+        font-size: 14px;
+        opacity: .9;
+        transition: .3s;
+    }
+
+
+
+
+        .friend-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+
+/* =================================
+ Footer
+================================= */
+
+
+footer {
+    padding: 35px;
+    text-align: center;
+    background: #061633;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/* =================================
+ 动画效果
+================================= */
+
+
+@keyframes floatUp {
+
+
+    0% {
+        transform: translateY(0);
+    }
+
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+.float {
+    animation: floatUp 3s infinite;
+}
+
+
+
+
+
+
+
+
+
+/* =================================
+ 手机端优化
+================================= */
+
+
+@media(max-width:900px) {
+
+
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+
+
+    .header {
+        padding: 0 20px;
+    }
+
+
+
+
+        .header nav {
+            display: none;
+        }
+
+
+
+
+    .logo {
+        font-size: 23px;
+    }
+
+
+
+
+
+    .nav-btn {
+        padding: 9px 20px;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+    .banner {
+        height: 600px;
+    }
+
+
+
+
+
+    .banner-content {
+        margin: 0 25px;
+    }
+
+
+
+
+
+        .banner-content h1 {
+            font-size: 38px;
+        }
+
+
+
+
+
+        .banner-content p {
+            font-size: 18px;
+        }
+
+
+
+
+
+
+
+    .section,
+    .dark,
+    .api {
+        padding: 60px 25px;
+    }
+
+
+
+
+
+
+
+    .grid3,
+    .grid4,
+    .advantage-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+
+    .box {
+        padding: 28px;
+    }
+
+
+
+
+
+
+
+    .flow div {
+        width: 90%;
+    }
+
+
+
+
+
+    .api-list {
+        gap: 12px;
+    }
+
+
+
+
+
+        .api-list span {
+            padding: 12px 22px;
+        }
+
+
+
+
+
+    .industry span {
+        padding: 12px 22px;
+    }
+
+
+
+
+
+    .steps {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+    .cta {
+        padding: 70px 20px;
+    }
+
+
+
+
+
+        .cta h2 {
+            font-size: 32px;
+        }
+
+
+
+
+
+    .seo-content {
+        padding: 60px 25px;
+    }
+
+
+
+
+
+    .faq-section {
+        padding: 60px 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =================================
+ 超小屏幕
+================================= */
+
+
+@media(max-width:480px) {
+
+
+    .banner-content h1 {
+        font-size: 32px;
+    }
+
+
+
+    .banner-content p {
+        font-size: 16px;
+    }
+
+
+
+    .box h3 {
+        font-size: 20px;
+    }
+
+
+
+    .cta h2 {
+        font-size: 28px;
+    }
+
+
+
+    .friend-links {
+        gap: 15px;
+    }
+}

@@ -1,0 +1,1647 @@
+﻿/* =====================================
+   NEWS PAGE CSS
+   Philippines Payment News SEO Style
+===================================== */
+
+
+/* ===============================
+   全局基础
+================================ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background: #f5f9ff;
+    color: #17243b;
+    line-height: 1.8;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #061a3a;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+/* ===============================
+ Header导航
+================================ */
+
+
+.header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: rgba(5,20,50,.82);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d9ff;
+    letter-spacing: 1px;
+}
+
+
+
+
+.header nav {
+    display: flex;
+    gap: 35px;
+}
+
+
+
+
+    .header nav a {
+        color: #fff;
+        font-size: 16px;
+        transition: .3s;
+    }
+
+
+
+
+
+        .header nav a:hover,
+        .header nav .active {
+            color: #00d9ff;
+        }
+
+
+
+
+
+
+.nav-btn {
+    display: inline-block;
+    padding: 11px 28px;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient( 90deg, #006eff, #00d9ff );
+    box-shadow: 0 0 25px rgba(0,180,255,.45);
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ Banner
+================================ */
+
+
+.banner {
+    height: 680px;
+}
+
+
+
+.banner-bg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(0,15,55,.92), rgba(0,100,255,.35) ), url("../images/news-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+.banner-content {
+    margin-left: 10%;
+    max-width: 750px;
+    color: white;
+}
+
+
+
+
+
+    .banner-content h1 {
+        font-size: 58px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+
+
+
+    .banner-content p {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+
+
+
+
+
+    .banner-content a {
+        display: inline-block;
+        padding: 15px 40px;
+        border-radius: 40px;
+        color: white;
+        background: linear-gradient( 90deg, #00c6ff, #006cff );
+    }
+
+
+
+
+
+
+
+
+/* ===============================
+ 内容基础区域
+================================ */
+
+
+.section {
+    padding: 90px 8%;
+}
+
+
+
+
+
+.desc,
+.intro {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+    color: #667;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ 新闻分类模块
+================================ */
+
+
+.category-section {
+    padding: 90px 8%;
+}
+
+
+
+
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+
+
+
+    .category-grid div {
+        background: white;
+        padding: 35px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 12px 35px rgba(0,80,180,.12);
+        transition: .35s;
+    }
+
+
+
+        .category-grid div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 45px rgba(0,150,255,.3);
+        }
+
+
+
+    .category-grid h3 {
+        color: #006cff;
+        margin-bottom: 15px;
+    }
+
+
+
+    .category-grid p {
+        color: #666;
+    }
+
+
+
+
+
+
+
+
+/* ===============================
+ 新闻筛选按钮
+================================ */
+
+
+.news-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 55px;
+}
+
+
+
+
+
+    .news-filter button {
+        position: relative;
+        overflow: hidden;
+        border: none;
+        padding: 14px 34px;
+        border-radius: 50px;
+        background: linear-gradient( 145deg, #fff, #f1f7ff );
+        color: #006cff;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        border: 1px solid rgba(0,110,255,.15);
+        box-shadow: 0 10px 30px rgba(0,80,180,.12);
+        transition: .35s;
+    }
+
+
+
+
+
+        .news-filter button:hover {
+            transform: translateY(-6px);
+            color: white;
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            box-shadow: 0 18px 40px rgba(0,150,255,.35);
+        }
+
+
+
+
+
+        .news-filter button.active {
+            color: white;
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            box-shadow: 0 0 0 5px rgba(0,150,255,.12), 0 15px 40px rgba(0,150,255,.45);
+        }
+
+/* ===============================
+ 新闻列表区域
+================================ */
+
+
+.news-section {
+    padding: 90px 8%;
+    background: #f5f9ff;
+}
+
+
+
+
+
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ 新闻卡片
+================================ */
+
+
+.news-card {
+    background: white;
+    border-radius: 22px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,80,180,.12);
+    transition: .35s;
+}
+
+
+
+
+
+    /* 顶部渐变线 */
+
+
+    .news-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient( 90deg, #006cff, #00d9ff );
+    }
+
+
+
+
+
+    .news-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 55px rgba(0,140,255,.3);
+    }
+
+
+
+
+
+
+
+
+/* 日期 */
+
+
+.news-date {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: #eef7ff;
+    color: #006cff;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+
+
+
+
+
+
+
+/* 标题 */
+
+
+.news-card h3 {
+    font-size: 22px;
+    line-height: 1.5;
+    color: #061a3a;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+    .news-card h3:hover {
+        color: #006cff;
+    }
+
+
+
+
+
+
+
+
+/* 描述 */
+
+
+.news-card p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+
+
+
+
+
+
+/* 阅读按钮 */
+
+
+.news-card a {
+    display: inline-flex;
+    align-items: center;
+    color: #006cff;
+    font-weight: bold;
+    transition: .3s;
+}
+
+
+
+
+
+    .news-card a:hover {
+        color: #00bfff;
+        transform: translateX(5px);
+    }
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 新闻标签
+================================ */
+
+
+.news-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background: linear-gradient( 90deg, #006cff, #00d9ff );
+    color: white;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 分页区域
+================================ */
+
+
+.pagination {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+    /* ===============================
+ 分页按钮
+ 兼容 JS button + a
+================================ */
+
+
+    .pagination button,
+    .pagination a {
+        min-width: 46px;
+        height: 46px;
+        padding: 0 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1px solid rgba(0,110,255,.15);
+        background: linear-gradient( 145deg, #ffffff, #f1f7ff );
+        color: #006cff;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 25px rgba(0,80,180,.15);
+        transition: all .35s ease;
+    }
+
+
+
+
+
+
+
+
+        /* 光圈效果 */
+
+
+        .pagination button::before,
+        .pagination a::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background: radial-gradient( circle, rgba(255,255,255,.8), transparent );
+            transition: .5s;
+        }
+
+
+
+
+
+        .pagination button:hover::before,
+        .pagination a:hover::before {
+            width: 140px;
+            height: 140px;
+        }
+
+
+
+
+
+
+
+
+        /* hover */
+
+
+        .pagination button:hover,
+        .pagination a:hover {
+            transform: translateY(-6px);
+            color: white;
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            box-shadow: 0 15px 40px rgba(0,150,255,.45);
+        }
+
+
+
+
+
+
+
+
+        /* 当前页 */
+
+
+        .pagination button.active,
+        .pagination a.active {
+            color: white;
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            border-color: transparent;
+            transform: translateY(-4px);
+            box-shadow: 0 0 0 5px rgba(0,150,255,.15), 0 15px 40px rgba(0,150,255,.45);
+        }
+
+
+
+
+
+
+
+
+
+            /* 当前页发光动画 */
+
+
+            .pagination button.active::after,
+            .pagination a.active::after {
+                content: "";
+                position: absolute;
+                inset: -4px;
+                border-radius: 50px;
+                border: 2px solid rgba(0,217,255,.7);
+                animation: pageGlow 2s infinite;
+            }
+
+
+
+
+
+@keyframes pageGlow {
+
+
+    0% {
+        opacity: .3;
+    }
+
+
+
+    50% {
+        opacity: 1;
+    }
+
+
+
+    100% {
+        opacity: .3;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* 上一页 下一页 */
+
+
+.pagination .prev,
+.pagination .next {
+    padding: 0 28px;
+}
+
+
+
+
+
+    .pagination .prev:hover,
+    .pagination .next:hover {
+        letter-spacing: 1px;
+    }
+
+
+
+
+
+
+
+
+
+/* 禁用按钮 */
+
+
+.pagination button.disabled,
+.pagination a.disabled {
+    background: #eee;
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+
+
+
+
+    .pagination button.disabled:hover,
+    .pagination a.disabled:hover {
+        transform: none;
+        background: #eee;
+        color: #aaa;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 分页手机适配
+================================ */
+
+
+@media(max-width:900px) {
+
+
+
+    .pagination {
+        gap: 10px;
+    }
+
+
+
+
+
+        .pagination button,
+        .pagination a {
+            min-width: 38px;
+            height: 38px;
+            padding: 0 12px;
+            font-size: 14px;
+        }
+
+
+
+
+
+        .pagination .prev,
+        .pagination .next {
+            padding: 0 18px;
+        }
+}
+
+
+
+
+
+
+
+/* ===============================
+ 新闻阅读统计
+================================ */
+
+
+.news-meta {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    color: #888;
+    font-size: 13px;
+}
+
+
+
+
+
+    .news-meta span {
+        display: flex;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 新闻图片支持
+================================ */
+
+
+.news-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+
+
+
+    .news-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+    }
+
+
+
+
+
+.news-card:hover .news-image img {
+    transform: scale(1.08);
+}
+
+/* ===============================
+ 热门资讯模块
+================================ */
+
+
+.popular-section {
+    padding: 90px 8%;
+    background: #f1f8ff;
+}
+
+
+
+
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+
+
+
+
+    .popular-grid div {
+        background: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 10px 35px rgba(0,80,180,.12);
+        transition: .35s;
+    }
+
+
+
+
+
+
+
+        .popular-grid div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 45px rgba(0,150,255,.3);
+        }
+
+
+
+
+
+
+
+    .popular-grid span {
+        display: inline-block;
+        padding: 5px 16px;
+        border-radius: 20px;
+        background: linear-gradient( 90deg, #006cff, #00d9ff );
+        color: white;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+    .popular-grid h3 {
+        font-size: 21px;
+        color: #061a3a;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+
+    .popular-grid p {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+    .popular-grid a {
+        color: #006cff;
+        font-weight: bold;
+    }
+
+
+
+
+
+        .popular-grid a:hover {
+            color: #00bfff;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ SEO正文模块
+================================ */
+
+
+.seo-content {
+    padding: 90px 12%;
+    background: white;
+}
+
+
+
+
+
+    .seo-content h2 {
+        margin-bottom: 35px;
+    }
+
+
+
+
+
+    .seo-content h3 {
+        font-size: 24px;
+        color: #061a3a;
+        margin: 35px 0 15px;
+    }
+
+
+
+
+
+
+
+    .seo-content p {
+        font-size: 18px;
+        color: #555;
+        line-height: 2;
+        margin-bottom: 25px;
+    }
+
+
+
+
+
+
+
+    .seo-content strong {
+        color: #006cff;
+    }
+
+
+
+
+
+
+
+    .seo-content ul {
+        margin: 25px 0;
+        padding-left: 35px;
+    }
+
+
+
+
+
+    .seo-content li {
+        margin-bottom: 12px;
+        color: #555;
+    }
+
+
+
+
+
+
+
+        .seo-content li::marker {
+            color: #006cff;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 支付趋势模块
+================================ */
+
+
+.trend-section {
+    padding: 90px 8%;
+    background: linear-gradient( 135deg, #061633, #073b80 );
+    color: white;
+}
+
+
+
+
+
+
+.trend-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+
+
+
+
+    .trend-grid div {
+        padding: 35px;
+        background: rgba(255,255,255,.1);
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,.2);
+        transition: .3s;
+    }
+
+
+
+
+
+
+
+        .trend-grid div:hover {
+            background: rgba(0,180,255,.2);
+            transform: translateY(-8px);
+        }
+
+
+
+
+
+
+
+    .trend-grid h3 {
+        color: #00d9ff;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+    .trend-grid p {
+        color: #000000;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ FAQ问答模块
+================================ */
+
+
+.faq-section {
+    padding: 90px 10%;
+    background: #f5f9ff;
+}
+
+
+
+
+
+
+.faq-item {
+    background: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,80,180,.1);
+    transition: .3s;
+}
+
+
+
+
+
+
+
+    .faq-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0,150,255,.2);
+    }
+
+
+
+
+
+
+
+    .faq-item h3 {
+        color: #006cff;
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+
+
+    .faq-item p {
+        color: #666;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 关键词标签
+================================ */
+
+
+.keyword-section {
+    padding: 70px 8%;
+    background: white;
+}
+
+
+
+
+
+
+
+.keyword-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+
+
+
+
+
+
+    .keyword-list a {
+        padding: 12px 25px;
+        border-radius: 30px;
+        background: #eef7ff;
+        color: #006cff;
+        border: 1px solid rgba(0,110,255,.12);
+        transition: .3s;
+    }
+
+
+
+
+
+
+
+        .keyword-list a:hover {
+            color: white;
+            background: linear-gradient( 135deg, #006cff, #00d9ff );
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ CTA 联系区域
+================================ */
+
+
+.cta {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient( 120deg, #006cff, #00d9ff );
+}
+
+
+
+
+
+
+
+    .cta h2 {
+        color: white;
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+    .cta p {
+        font-size: 20px;
+        margin: 25px 0;
+    }
+
+
+
+
+
+
+
+    .cta .nav-btn {
+        background: white;
+        color: #006cff;
+        box-shadow: none;
+        padding: 15px 45px;
+    }
+
+
+
+
+
+        .cta .nav-btn:hover {
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 友情链接
+================================ */
+
+
+.friend-links {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+    .friend-links a {
+        color: white;
+        font-size: 14px;
+        opacity: .9;
+        transition: .3s;
+    }
+
+
+
+
+
+
+
+        .friend-links a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ Footer
+================================ */
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #061633;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===============================
+ 移动端完整适配
+================================ */
+
+
+@media(max-width:900px) {
+
+
+
+
+
+    .header {
+        padding: 0 20px;
+    }
+
+
+
+
+
+        .header nav {
+            display: none;
+        }
+
+
+
+
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+
+
+
+    .nav-btn {
+        padding: 8px 18px;
+    }
+
+
+
+
+
+
+
+    .banner {
+        height: 580px;
+    }
+
+
+
+
+
+
+    .banner-content {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+
+
+
+
+
+        .banner-content h1 {
+            font-size: 38px;
+        }
+
+
+
+
+
+        .banner-content p {
+            font-size: 18px;
+        }
+
+
+
+
+
+
+    .category-grid,
+    .news-grid,
+    .popular-grid,
+    .trend-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+
+
+
+    .section,
+    .news-section,
+    .popular-section {
+        padding: 60px 25px;
+    }
+
+
+
+
+
+
+
+    .seo-content {
+        padding: 60px 25px;
+    }
+
+
+
+
+
+
+
+        .seo-content p {
+            font-size: 16px;
+        }
+
+
+
+
+
+
+
+    .faq-section {
+        padding: 60px 25px;
+    }
+
+
+
+
+
+
+
+    .faq-item {
+        padding: 25px;
+    }
+
+
+
+
+
+
+
+    .keyword-list {
+        justify-content: flex-start;
+    }
+
+
+
+
+
+
+
+    .cta h2 {
+        font-size: 32px;
+    }
+
+
+
+
+
+    .cta p {
+        font-size: 17px;
+    }
+}
+
+
+
+@media(max-width:480px) {
+
+
+
+    .news-filter {
+        gap: 10px;
+    }
+
+
+
+
+        .news-filter button {
+            padding: 10px 18px;
+            font-size: 13px;
+        }
+
+
+
+
+
+    .pagination {
+        gap: 8px;
+    }
+
+
+
+
+
+
+        .pagination button,
+        .pagination a {
+            min-width: 36px;
+            height: 36px;
+            font-size: 13px;
+        }
+
+
+
+
+
+    .banner-content h1 {
+        font-size: 32px;
+    }
+}

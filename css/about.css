@@ -1,0 +1,737 @@
+﻿/* =================================================
+ ABOUT PAGE
+ Payment Technology Company Style
+ SEO Enterprise Website
+================================================= */
+
+
+/* ===============================
+ Reset
+================================ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+    background: #f5f9ff;
+    color: #17243b;
+    line-height: 1.8;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: #061a3a;
+}
+
+
+
+h3 {
+    font-size: 22px;
+}
+
+
+
+
+
+
+/* ===============================
+ Header
+================================ */
+
+
+.header {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: rgba(5,20,50,.82);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+
+
+.header nav {
+    display: flex;
+    gap: 32px;
+}
+
+
+
+    .header nav a {
+        color: white;
+        font-size: 16px;
+        transition: .3s;
+    }
+
+
+
+        .header nav a:hover,
+        .header nav .active {
+            color: #00d9ff;
+        }
+
+
+
+
+.nav-btn {
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 40px;
+    background: linear-gradient( 90deg, #006eff, #00d9ff );
+    color: white !important;
+    box-shadow: 0 0 25px rgba(0,180,255,.45);
+}
+
+
+
+
+
+
+/* ===============================
+ Banner
+================================ */
+
+
+.banner {
+    height: 720px;
+}
+
+
+
+.banner-bg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( 90deg, rgba(0,18,55,.9), rgba(0,120,255,.35) ), url("../images/about-banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.banner-content {
+    margin-left: 10%;
+    max-width: 720px;
+    color: white;
+}
+
+
+
+    .banner-content h1 {
+        font-size: 58px;
+        line-height: 1.3;
+        margin-bottom: 25px;
+    }
+
+
+
+    .banner-content p {
+        font-size: 22px;
+        margin-bottom: 40px;
+    }
+
+
+
+    .banner-content a {
+        display: inline-block;
+        padding: 15px 42px;
+        border-radius: 40px;
+        background: linear-gradient( 90deg, #00c6ff, #006cff );
+        color: white;
+    }
+
+
+
+
+
+
+
+/* ===============================
+ Section
+================================ */
+
+
+.section {
+    padding: 90px 8%;
+}
+
+
+
+.intro {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #667;
+}
+
+
+
+
+
+
+
+/* ===============================
+ Dark Section
+================================ */
+
+
+.dark {
+    padding: 90px 8%;
+    background: linear-gradient( 135deg, #061633, #073b80 );
+    color: white;
+}
+
+
+
+    .dark h2 {
+        color: white;
+    }
+
+
+
+    .dark p {
+        color: rgba(255,255,255,.85);
+    }
+
+
+
+
+
+
+
+/* ===============================
+ Grid
+================================ */
+
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+
+
+
+
+
+
+/* ===============================
+ Box
+================================ */
+
+
+.box {
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,80,180,.12);
+    transition: .35s;
+}
+
+
+
+    .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 45px rgba(0,150,255,.3);
+    }
+
+
+
+    .box i {
+        font-size: 42px;
+        color: #008cff;
+        margin-bottom: 20px;
+    }
+
+
+
+    .box h3 {
+        color: #006cff;
+        margin-bottom: 15px;
+    }
+
+
+
+
+
+/* ===============================
+ Grid4 dark card
+================================ */
+
+
+.grid4 div {
+    padding: 35px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+
+
+.grid4 h3 {
+    color: #00d9ff;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ Research
+================================ */
+
+
+.research {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+
+
+    .research div {
+        background: white;
+        padding: 35px;
+        border-radius: 20px;
+        box-shadow: 0 10px 35px rgba(0,80,160,.1);
+    }
+
+
+
+    .research i {
+        font-size: 38px;
+        color: #006cff;
+        margin-bottom: 20px;
+    }
+
+
+
+    .research h3 {
+        color: #006cff;
+    }
+
+
+
+
+
+
+
+
+/* ===============================
+ Architecture
+================================ */
+
+
+.architecture-box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+
+    .architecture-box div {
+        padding: 30px;
+        background: rgba(255,255,255,.1);
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,.2);
+    }
+
+
+
+    .architecture-box h3 {
+        color: #00d9ff;
+    }
+
+
+
+
+
+
+
+/* ===============================
+ Numbers
+================================ */
+
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+
+
+    .numbers div {
+        padding: 35px;
+        text-align: center;
+        background: rgba(255,255,255,.1);
+        border-radius: 20px;
+    }
+
+
+
+    .numbers strong {
+        display: block;
+        font-size: 48px;
+        color: #00d9ff;
+    }
+
+
+
+
+
+
+
+/* ===============================
+ Steps
+================================ */
+
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #006cff;
+    font-size: 20px;
+}
+
+
+
+    .steps span {
+        padding: 18px 35px;
+        background: white;
+        border-radius: 40px;
+        box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    }
+
+
+
+
+
+
+
+
+/* ===============================
+ Service
+================================ */
+
+
+.service {
+    padding: 90px 8%;
+    background: linear-gradient( 120deg, #eef8ff, #fff );
+}
+
+
+
+    .service .grid3 div {
+        padding: 35px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,100,255,.12);
+    }
+
+
+
+    .service h3 {
+        color: #006cff;
+    }
+
+
+
+
+
+
+
+/* ===============================
+ Support
+================================ */
+
+
+.support-section {
+    padding: 90px 8%;
+    text-align: center;
+    background: white;
+}
+
+
+
+.support {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+
+
+    .support span {
+        padding: 18px 40px;
+        background: white;
+        border-radius: 40px;
+        color: #006cff;
+        box-shadow: 0 10px 25px rgba(0,0,0,.1);
+    }
+
+
+
+
+
+
+
+
+/* ===============================
+ FAQ
+================================ */
+
+
+.faq {
+    background: #fff;
+}
+
+
+
+    .faq h3 {
+        margin-top: 35px;
+        color: #006cff;
+        font-size: 22px;
+    }
+
+
+
+    .faq p {
+        color: #555;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+/* ===============================
+ CTA
+================================ */
+
+
+.cta {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient( 120deg, #006cff, #00d9ff );
+}
+
+
+
+    .cta h2 {
+        color: white;
+        font-size: 42px;
+    }
+
+
+
+    .cta p {
+        font-size: 20px;
+        margin: 25px;
+    }
+
+
+
+
+
+
+
+
+/* ===============================
+ Friend Link
+================================ */
+
+
+.friend-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+
+    .friend-links a {
+        color: white;
+        font-size: 14px;
+        opacity: .9;
+    }
+
+
+
+
+/* ===============================
+ Footer
+================================ */
+
+
+footer {
+    padding: 30px;
+    text-align: center;
+    background: #04122d;
+    color: white;
+}
+
+
+
+
+
+
+
+
+/* ===============================
+ Mobile
+================================ */
+
+
+@media(max-width:900px) {
+
+
+
+    .header {
+        padding: 0 20px;
+    }
+
+
+
+        .header nav {
+            display: none;
+        }
+
+
+
+    .banner {
+        height: 600px;
+    }
+
+
+
+    .banner-content {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+
+
+        .banner-content h1 {
+            font-size: 38px;
+        }
+
+
+
+        .banner-content p {
+            font-size: 18px;
+        }
+
+
+
+    .grid3,
+    .grid4,
+    .research,
+    .numbers,
+    .architecture-box {
+        grid-template-columns: 1fr;
+    }
+
+
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+
+    .steps {
+        flex-direction: column;
+    }
+
+
+
+        .steps span {
+            width: 90%;
+            text-align: center;
+        }
+
+
+
+    .numbers strong {
+        font-size: 40px;
+    }
+}
